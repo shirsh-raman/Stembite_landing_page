@@ -1,5 +1,7 @@
 # STEMBITE Foods
 
+> **Disclaimer:** This is a fictional company created for educational and presentation purposes only. STEMBITE Foods does not exist as a real business. All content, products, pricing, statistics, testimonials, and contact information on this site are entirely fictitious and used solely to demonstrate web development skills.
+
 Landing page for STEMBITE Foods — an agri-food startup transforming banana stem waste into nutritious, sustainable food products.
 
 ## Tech Stack
