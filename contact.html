@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STEMBITE Foods — Contact Us. Get in touch for questions, partnerships, or bulk orders.">
+  <title>STEMBITE Foods — Contact Us</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">STEMBITE</a>
+      <nav class="header__nav" id="mainNav">
+        <a href="index.html" class="header__nav-link" data-page="home">Home</a>
+        <a href="products.html" class="header__nav-link" data-page="products">Products</a>
+        <a href="story.html" class="header__nav-link" data-page="story">Our Story</a>
+        <a href="process.html" class="header__nav-link" data-page="process">How It Works</a>
+        <a href="contact.html" class="header__nav-link header__nav-link--active" data-page="contact">Contact</a>
+      </nav>
+      <a href="products.html" class="btn btn-primary header__cta">Shop Now</a>
+      <button class="header__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="header__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="header__nav-link" data-page="home">Home</a>
+    <a href="products.html" class="header__nav-link" data-page="products">Products</a>
+    <a href="story.html" class="header__nav-link" data-page="story">Our Story</a>
+    <a href="process.html" class="header__nav-link" data-page="process">How It Works</a>
+    <a href="contact.html" class="header__nav-link header__nav-link--active" data-page="contact">Contact</a>
+    <a href="products.html" class="btn btn-primary">Shop Now</a>
+  </div>
+
+  <main style="padding-top: 72px;">
+    <!-- Contact Hero -->
+    <section class="contact-hero section">
+      <div class="container">
+        <h1 class="heading-xl">Contact Us</h1>
+        <p class="body-lg" style="color: var(--stb-gray); max-width: 600px; margin: 1rem auto 0;">Have questions? Want to partner with us? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form + Details -->
+    <section class="section" data-animate>
+      <div class="container">
+        <div class="contact-section">
+          <div class="contact-form">
+            <h2 class="heading-md" style="margin-bottom: 2rem;">Send Us a Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <select id="subject" class="form-input">
+                  <option value="">Select a topic</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="b2b">B2B / Bulk Orders</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="support">Product Support</option>
+                  <option value="press">Press / Media</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" class="form-textarea" placeholder="Tell us what you need..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-details">
+            <h2 class="heading-md" style="margin-bottom: 2rem;">Get in Touch</h2>
+            <div class="contact-detail-item">
+              <div class="contact-detail-item__icon">📧</div>
+              <div class="contact-detail-item__text">
+                <div class="form-label">Email</div>
+                <div>hello@stembitefoods.com</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-item__icon">📞</div>
+              <div class="contact-detail-item__text">
+                <div class="form-label">Phone</div>
+                <div>+91 98765 43210</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-item__icon">📍</div>
+              <div class="contact-detail-item__text">
+                <div class="form-label">Address</div>
+                <div>STEMBITE Foods Pvt. Ltd.<br>India</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-item__icon">🕐</div>
+              <div class="contact-detail-item__text">
+                <div class="form-label">Business Hours</div>
+                <div>Mon - Sat: 9:00 AM - 6:00 PM</div>
+              </div>
+            </div>
+            <div class="contact-map" style="background: linear-gradient(135deg, #E8F5E9 0%, #2D7A3A 50%, #D4A843 100%); border-radius: var(--stb-radius-lg); margin-top: 2rem;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B2B CTA -->
+    <section class="section" style="background: var(--stb-dark); color: white; text-align: center;" data-animate>
+      <div class="container">
+        <h2 class="heading-md" style="color: white;">Looking for Bulk Orders?</h2>
+        <p class="body-lg" style="color: var(--stb-sage); max-width: 600px; margin: 1rem auto 2rem;">STEMBITE Pro is designed for bakeries, food manufacturers, and ingredient buyers. Get competitive bulk pricing and reliable supply.</p>
+        <a href="products.html" class="btn btn-gold">Explore STEMBITE Pro</a>
+      </div>
+    </section>
+
+    <!-- Quick FAQ -->
+    <section class="section" data-animate>
+      <div class="container" style="max-width: 800px;">
+        <h2 class="heading-md text-center" style="margin-bottom: 2rem;">Quick Questions</h2>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">What is the minimum order quantity for B2B?<span>+</span></div>
+          <div class="faq-answer" role="region">Our minimum order for STEMBITE Pro starts at 25 kg. Contact us for custom requirements and volume discounts.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Do you ship across India?<span>+</span></div>
+          <div class="faq-answer" role="region">Yes! We deliver across India. International shipping is available for B2B orders. Contact us for details.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Can I get product samples?<span>+</span></div>
+          <div class="faq-answer" role="region">Yes, we offer sample packs for potential customers. Contact us with your details and we'll arrange a sample.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 class="footer__heading">Products</h4>
+          <a href="products.html" class="footer__link">Fibre+</a>
+          <a href="products.html" class="footer__link">Flour+</a>
+          <a href="products.html" class="footer__link">Mix</a>
+          <a href="products.html" class="footer__link">Bites</a>
+          <a href="products.html" class="footer__link">Pro (B2B)</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <a href="story.html" class="footer__link">Our Story</a>
+          <a href="process.html" class="footer__link">How It Works</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Resources</h4>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Recipes</a>
+          <a href="#" class="footer__link">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Connect</h4>
+          <a href="#" class="footer__link">Instagram</a>
+          <a href="#" class="footer__link">LinkedIn</a>
+          <a href="#" class="footer__link">Twitter</a>
+        </div>
+      </div>
+      <div class="footer__newsletter">
+        <h4 class="footer__heading">Join the Wellness Movement</h4>
+        <form class="footer__form">
+          <input type="email" placeholder="Enter your email" class="footer__input">
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 STEMBITE Foods. All rights reserved.</p>
+        <div>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

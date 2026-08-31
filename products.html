@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STEMBITE Foods — Our Products. Nutrition from the earth. Five products, one mission: turning waste into wellness.">
+  <title>STEMBITE Foods — Our Products</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">STEMBITE</a>
+      <nav class="header__nav" id="mainNav">
+        <a href="index.html" class="header__nav-link" data-page="home">Home</a>
+        <a href="products.html" class="header__nav-link header__nav-link--active" data-page="products">Products</a>
+        <a href="story.html" class="header__nav-link" data-page="story">Our Story</a>
+        <a href="process.html" class="header__nav-link" data-page="process">How It Works</a>
+        <a href="contact.html" class="header__nav-link" data-page="contact">Contact</a>
+      </nav>
+      <a href="products.html" class="btn btn-primary header__cta">Shop Now</a>
+      <button class="header__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="header__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="header__nav-link" data-page="home">Home</a>
+    <a href="products.html" class="header__nav-link header__nav-link--active" data-page="products">Products</a>
+    <a href="story.html" class="header__nav-link" data-page="story">Our Story</a>
+    <a href="process.html" class="header__nav-link" data-page="process">How It Works</a>
+    <a href="contact.html" class="header__nav-link" data-page="contact">Contact</a>
+    <a href="products.html" class="btn btn-primary">Shop Now</a>
+  </div>
+
+  <main style="padding-top: 72px;">
+    <!-- Products Hero -->
+    <section class="products-hero">
+      <div class="container">
+        <h1 class="heading-xl">Our Products</h1>
+        <p class="body-lg" style="color: var(--stb-sage); max-width: 600px; margin: 1rem auto 0;">Nutrition from the earth. Five products, one mission: turning waste into wellness.</p>
+      </div>
+    </section>
+
+    <!-- Filter Bar + Products Grid -->
+    <section class="section" data-animate>
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn filter-btn--active" data-filter="all">All Products</button>
+          <button class="filter-btn" data-filter="consumer">Consumer</button>
+          <button class="filter-btn" data-filter="b2b">B2B</button>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1: Fibre+ -->
+          <div class="product-card-lg" data-category="consumer">
+            <div class="product-card-lg__image" style="background: linear-gradient(135deg, #2D7A3A 0%, #5BAA6B 100%);"></div>
+            <span class="badge badge-green product-card-lg__badge">FLAGSHIP</span>
+            <h3 class="product-card-lg__name">STEMBITE Fibre+</h3>
+            <p class="product-card-lg__desc">Premium fibre powder for daily gut health. Made from food-grade banana stem fibre.</p>
+            <div class="product-card-lg__benefits">
+              <span class="badge">Natural</span>
+              <span class="badge">High Fibre</span>
+              <span class="badge">FSSAI</span>
+            </div>
+            <div class="product-card-lg__footer">
+              <span class="product-card-lg__price">₹349</span>
+              <a href="#" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 2: Flour+ -->
+          <div class="product-card-lg" data-category="consumer">
+            <div class="product-card-lg__image" style="background: linear-gradient(135deg, #5BAA6B 0%, #A8C5A0 100%);"></div>
+            <span class="badge badge-green product-card-lg__badge">POPULAR</span>
+            <h3 class="product-card-lg__name">STEMBITE Flour+</h3>
+            <p class="product-card-lg__desc">High-fibre flour blend for healthier rotis, breads, and baking.</p>
+            <div class="product-card-lg__benefits">
+              <span class="badge">High Fibre</span>
+              <span class="badge">Versatile</span>
+            </div>
+            <div class="product-card-lg__footer">
+              <span class="product-card-lg__price">₹299</span>
+              <a href="#" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 3: Mix -->
+          <div class="product-card-lg" data-category="consumer">
+            <div class="product-card-lg__image" style="background: linear-gradient(135deg, #D4A843 0%, #FFF8E7 100%);"></div>
+            <span class="badge badge-gold product-card-lg__badge">NEW</span>
+            <h3 class="product-card-lg__name">STEMBITE Mix</h3>
+            <p class="product-card-lg__desc">Functional food mix for smoothies, porridge, and daily nutrition boost.</p>
+            <div class="product-card-lg__benefits">
+              <span class="badge">Functional</span>
+              <span class="badge">Easy Use</span>
+            </div>
+            <div class="product-card-lg__footer">
+              <span class="product-card-lg__price">₹399</span>
+              <a href="#" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 4: Bites -->
+          <div class="product-card-lg" data-category="consumer">
+            <div class="product-card-lg__image" style="background: linear-gradient(135deg, #A8C5A0 0%, #E8F5E9 100%);"></div>
+            <h3 class="product-card-lg__name">STEMBITE Bites</h3>
+            <p class="product-card-lg__desc">Fibre-enriched biscuits. A tasty snack that's actually good for you.</p>
+            <div class="product-card-lg__benefits">
+              <span class="badge">Tasty</span>
+              <span class="badge">Fibre-Rich</span>
+            </div>
+            <div class="product-card-lg__footer">
+              <span class="product-card-lg__price">₹199</span>
+              <a href="#" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 5: Pro -->
+          <div class="product-card-lg" data-category="b2b">
+            <div class="product-card-lg__image" style="background: linear-gradient(135deg, #1A2E1C 0%, #2D7A3A 100%);"></div>
+            <span class="badge product-card-lg__badge" style="background: var(--stb-dark); color: white;">B2B</span>
+            <h3 class="product-card-lg__name">STEMBITE Pro</h3>
+            <p class="product-card-lg__desc">Food-grade fibre ingredient for bakeries and food manufacturers.</p>
+            <div class="product-card-lg__benefits">
+              <span class="badge">Bulk</span>
+              <span class="badge">Food-Grade</span>
+            </div>
+            <div class="product-card-lg__footer">
+              <span class="product-card-lg__price">Contact Us</span>
+              <a href="contact.html" class="btn btn-secondary btn-sm">Get Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section" style="background: var(--stb-green-light);" data-animate>
+      <div class="container">
+        <h2 class="heading-md text-center" style="margin-bottom: 2rem;">Product Comparison</h2>
+        <div style="overflow-x: auto;">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Fibre+</th>
+                <th>Flour+</th>
+                <th>Mix</th>
+                <th>Bites</th>
+                <th>Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Category</strong></td>
+                <td>Powder</td>
+                <td>Flour</td>
+                <td>Functional Mix</td>
+                <td>Biscuits</td>
+                <td>Ingredient</td>
+              </tr>
+              <tr>
+                <td><strong>Fibre Content</strong></td>
+                <td>High</td>
+                <td>Medium-High</td>
+                <td>Medium</td>
+                <td>Medium</td>
+                <td>Very High</td>
+              </tr>
+              <tr>
+                <td><strong>Use Case</strong></td>
+                <td>Daily supplement</td>
+                <td>Cooking/Baking</td>
+                <td>Smoothies/Porridge</td>
+                <td>Snacking</td>
+                <td>Manufacturing</td>
+              </tr>
+              <tr>
+                <td><strong>Target</strong></td>
+                <td>Health consumers</td>
+                <td>Home cooks</td>
+                <td>Fitness enthusiasts</td>
+                <td>Families</td>
+                <td>Bakeries/Factories</td>
+              </tr>
+              <tr>
+                <td><strong>Price</strong></td>
+                <td>₹349</td>
+                <td>₹299</td>
+                <td>₹399</td>
+                <td>₹199</td>
+                <td>Contact for bulk</td>
+              </tr>
+              <tr>
+                <td><strong>FSSAI Certified</strong></td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" data-animate>
+      <div class="container" style="max-width: 800px;">
+        <h2 class="heading-md text-center" style="margin-bottom: 2rem;">Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">What is banana stem fibre?<span>+</span></div>
+          <div class="faq-answer" role="region">Banana pseudostem is the trunk-like structure of the banana plant. It's rich in dietary fibre and is typically discarded after harvest. STEMBITE transforms this agricultural waste into food-grade fibre products.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Are your products FSSAI certified?<span>+</span></div>
+          <div class="faq-answer" role="region">Yes, all STEMBITE products are FSSAI certified and comply with all food safety standards in India.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">How do I use STEMBITE Fibre+?<span>+</span></div>
+          <div class="faq-answer" role="region">Mix one scoop (5g) into water, juice, smoothies, or sprinkle on food. It's tasteless and dissolves easily.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Do you offer bulk pricing for businesses?<span>+</span></div>
+          <div class="faq-answer" role="region">Yes! STEMBITE Pro is designed for B2B customers. Contact us for bulk pricing and custom requirements.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Where do you source your banana stems?<span>+</span></div>
+          <div class="faq-answer" role="region">We partner directly with local farmers and FPOs (Farmer Producer Organizations) across India to collect banana pseudostem that would otherwise go to waste.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 class="footer__heading">Products</h4>
+          <a href="products.html" class="footer__link">Fibre+</a>
+          <a href="products.html" class="footer__link">Flour+</a>
+          <a href="products.html" class="footer__link">Mix</a>
+          <a href="products.html" class="footer__link">Bites</a>
+          <a href="products.html" class="footer__link">Pro (B2B)</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <a href="story.html" class="footer__link">Our Story</a>
+          <a href="process.html" class="footer__link">How It Works</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Resources</h4>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Recipes</a>
+          <a href="#" class="footer__link">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Connect</h4>
+          <a href="#" class="footer__link">Instagram</a>
+          <a href="#" class="footer__link">LinkedIn</a>
+          <a href="#" class="footer__link">Twitter</a>
+        </div>
+      </div>
+      <div class="footer__newsletter">
+        <h4 class="footer__heading">Join the Wellness Movement</h4>
+        <form class="footer__form">
+          <input type="email" placeholder="Enter your email" class="footer__input">
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 STEMBITE Foods. All rights reserved.</p>
+        <div>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

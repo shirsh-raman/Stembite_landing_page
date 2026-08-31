@@ -1,0 +1,246 @@
+/* ============================================
+   STEMBITE Foods — Responsive Design
+   Breakpoints: Mobile ≤768px, Tablet 768–1024px, Large ≥1440px
+   ============================================ */
+
+/* ---- Scroll Animations ---- */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   MOBILE — max-width: 768px
+   ============================================ */
+@media (max-width: 768px) {
+
+  /* ---- Header ---- */
+  .header__nav {
+    display: none;
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  .header__hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .header__hamburger span {
+    width: 24px;
+    height: 2px;
+    background: var(--stb-dark);
+    transition: var(--stb-transition);
+  }
+
+  .header__mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .header__mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  /* ---- Home Page ---- */
+  .hero__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__visual {
+    min-height: 250px;
+    width: 100%;
+  }
+
+  .hero__trust {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .products-preview__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-it-works__steps {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .impact__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-cta__form {
+    flex-direction: column;
+  }
+
+  /* ---- Products Page ---- */
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-table {
+    font-size: 0.875rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .filter-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ---- Story Page ---- */
+  .problem-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline__item {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .timeline__dot {
+    margin: 0 auto;
+  }
+
+  /* ---- Process Page ---- */
+  .process-step,
+  .process-step--reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .process-step__number {
+    margin: 0 auto;
+  }
+
+  .quality-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- Contact Page ---- */
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- Footer ---- */
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer__newsletter {
+    text-align: center;
+  }
+
+  .footer__form {
+    flex-direction: column;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* ============================================
+   TABLET — 768px to 1024px
+   ============================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .products-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-it-works__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quality-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================
+   LARGE — min-width: 1440px (optional enhancements)
+   ============================================ */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+}

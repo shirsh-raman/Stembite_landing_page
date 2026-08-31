@@ -1,0 +1,171 @@
+.story-hero {
+  background: var(--stb-green-light);
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.mission {
+  background: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.mission__quote {
+  font-family: var(--stb-font-heading);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--stb-dark);
+  border-left: 4px solid var(--stb-green-primary);
+  padding-left: 1.5rem;
+}
+
+.mission__author {
+  font-family: var(--stb-font-body);
+  font-weight: 600;
+  color: var(--stb-gray);
+  margin-top: 1.5rem;
+}
+
+.problem-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--stb-sage);
+  transform: translateX(-50%);
+}
+
+.timeline__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  width: 50%;
+}
+
+.timeline__item:nth-child(odd) {
+  align-self: flex-start;
+  padding-right: 3rem;
+  text-align: right;
+}
+
+.timeline__item:nth-child(even) {
+  align-self: flex-end;
+  margin-left: 50%;
+  padding-left: 3rem;
+}
+
+.timeline__dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--stb-green-primary);
+  border-radius: 50%;
+  top: 0;
+  z-index: 1;
+}
+
+.timeline__item:nth-child(odd) .timeline__dot {
+  right: -10px;
+}
+
+.timeline__item:nth-child(even) .timeline__dot {
+  left: -10px;
+}
+
+.timeline__dot::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline__line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--stb-sage);
+  transform: translateX(-50%);
+}
+
+.timeline__content {
+  background: white;
+  border-radius: var(--stb-radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  max-width: 400px;
+}
+
+.timeline__year {
+  font-family: var(--stb-font-heading);
+  font-weight: 700;
+  color: var(--stb-gold-accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.value-card__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.team-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.team-card__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.team-card__role {
+  font-size: 0.9rem;
+}

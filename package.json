@@ -1,0 +1,12 @@
+{
+  "name": "stembite-foods",
+  "version": "1.0.0",
+  "description": "STEMBITE Foods — From Farm Waste to Everyday Nutrition",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "python3 -m http.server 8080"
+  },
+  "keywords": ["food", "agriculture", "sustainability", "banana-stem", "fibre"],
+  "author": "STEMBITE Foods",
+  "license": "MIT"
+}

@@ -1,0 +1,141 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--stb-font-body);
+  background: var(--stb-white-bg);
+  color: var(--stb-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Scale — fluid sizing */
+h1, .heading-xl {
+  font-family: var(--stb-font-heading);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h2, .heading-lg {
+  font-family: var(--stb-font-heading);
+  font-weight: 600;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h3, .heading-md {
+  font-family: var(--stb-font-heading);
+  font-weight: 600;
+  font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+  line-height: 1.3;
+}
+
+h4, .heading-sm {
+  font-family: var(--stb-font-heading);
+  font-weight: 600;
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.35;
+}
+
+p, .body-lg, .body-sm {
+  margin-bottom: 1em;
+}
+
+.body-lg {
+  font-size: clamp(1.0625rem, 1.5vw, 1.25rem);
+  line-height: 1.65;
+}
+
+.body-sm {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.caption {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--stb-gray);
+}
+
+/* Links */
+a {
+  color: var(--stb-green-primary);
+  text-decoration: none;
+  transition: color var(--stb-transition);
+}
+
+a:hover {
+  color: var(--stb-green-secondary);
+  text-decoration: underline;
+}
+
+/* Focus Styles for Keyboard Navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--stb-green-primary);
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--stb-green-primary);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  z-index: 9999;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Images */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Lists */
+ul, ol {
+  list-style: none;
+}
+
+/* Forms */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Utility: Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

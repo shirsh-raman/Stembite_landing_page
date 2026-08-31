@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STEMBITE Foods — From Farm Waste to Everyday Nutrition. Transforming banana stem waste into nutritious food products.">
+  <title>STEMBITE Foods — How It Works</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/process.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">STEMBITE</a>
+      <nav class="header__nav" id="mainNav">
+        <a href="index.html" class="header__nav-link" data-page="home">Home</a>
+        <a href="products.html" class="header__nav-link" data-page="products">Products</a>
+        <a href="story.html" class="header__nav-link" data-page="story">Our Story</a>
+        <a href="process.html" class="header__nav-link header__nav-link--active" data-page="process">How It Works</a>
+        <a href="contact.html" class="header__nav-link" data-page="contact">Contact</a>
+      </nav>
+      <a href="products.html" class="btn btn-primary header__cta">Shop Now</a>
+      <button class="header__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="header__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="header__nav-link" data-page="home">Home</a>
+    <a href="products.html" class="header__nav-link" data-page="products">Products</a>
+    <a href="story.html" class="header__nav-link" data-page="story">Our Story</a>
+    <a href="process.html" class="header__nav-link header__nav-link--active" data-page="process">How It Works</a>
+    <a href="contact.html" class="header__nav-link" data-page="contact">Contact</a>
+    <a href="products.html" class="btn btn-primary">Shop Now</a>
+  </div>
+
+  <main style="padding-top: 72px;">
+    <!-- Process Hero -->
+    <section class="process-hero">
+      <div class="container">
+        <h1 class="heading-xl">How It Works</h1>
+        <p class="body-lg" style="color: var(--stb-sage); max-width: 600px; margin: 1rem auto 0;">From Stem to Superfood — the journey of transformation.</p>
+      </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="section" data-animate>
+      <div class="container">
+        <div class="process-steps">
+          <!-- Step 1 -->
+          <div class="process-step">
+            <div class="process-step__number">1</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Collection</h3>
+              <p class="process-step__desc">We partner with farmers and FPOs to collect banana pseudostem after harvest. What was once discarded becomes our raw material.</p>
+            </div>
+            <div class="process-step__visual" style="background: linear-gradient(135deg, #E8F5E9 0%, #2D7A3A 100%);"></div>
+          </div>
+          <!-- Step 2 (reversed) -->
+          <div class="process-step process-step--reverse">
+            <div class="process-step__number">2</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Sorting</h3>
+              <p class="process-step__desc">Stems are sorted by quality and freshness. Only the best pseudostems make it to processing.</p>
+            </div>
+            <div class="process-step__visual" style="background: linear-gradient(135deg, #2D7A3A 0%, #5BAA6B 100%);"></div>
+          </div>
+          <!-- Step 3 -->
+          <div class="process-step">
+            <div class="process-step__number">3</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Shredding</h3>
+              <p class="process-step__desc">The sorted stems are finely shredded to prepare for fibre extraction.</p>
+            </div>
+            <div class="process-step__visual" style="background: linear-gradient(135deg, #5BAA6B 0%, #A8C5A0 100%);"></div>
+          </div>
+          <!-- Step 4 (reversed) -->
+          <div class="process-step process-step--reverse">
+            <div class="process-step__number">4</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Drying</h3>
+              <p class="process-step__desc">Shredded material is dried using controlled methods to preserve nutritional value.</p>
+            </div>
+            <div class="process-step__visual" style="background: linear-gradient(135deg, #D4A843 0%, #FFF8E7 100%);"></div>
+          </div>
+          <!-- Step 5 -->
+          <div class="process-step">
+            <div class="process-step__number">5</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Grinding</h3>
+              <p class="process-step__desc">Dried fibre is ground into fine powder with consistent particle size.</p>
+            </div>
+            <div class="process-step__visual" style="background: linear-gradient(135deg, #A8C5A0 0%, #E8F5E9 100%);"></div>
+          </div>
+          <!-- Step 6 (reversed) -->
+          <div class="process-step process-step--reverse">
+            <div class="process-step__number">6</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Sieving</h3>
+              <p class="process-step__desc">Multiple sieving stages ensure uniform texture and remove any impurities.</p>
+            </div>
+            <div class="process-step__visual" style="background: linear-gradient(135deg, #2D7A3A 0%, #D4A843 100%);"></div>
+          </div>
+          <!-- Step 7 -->
+          <div class="process-step">
+            <div class="process-step__number">7</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Testing</h3>
+              <p class="process-step__desc">Every batch undergoes rigorous quality testing. FSSAI standards, fibre content, contamination checks.</p>
+            </div>
+            <div class="process-step__visual" style="background: linear-gradient(135deg, #1A2E1C 0%, #2D7A3A 100%);"></div>
+          </div>
+          <!-- Step 8 (reversed) -->
+          <div class="process-step process-step--reverse">
+            <div class="process-step__number">8</div>
+            <div class="process-step__content">
+              <h3 class="process-step__title">Packaging</h3>
+              <p class="process-step__desc">Food-grade packaging preserves freshness. Ready for your kitchen or factory.</p>
+            </div>
+            <div class="process-step__visual" style="background: linear-gradient(135deg, #5BAA6B 0%, #2D7A3A 100%);"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Assurance -->
+    <section class="section quality-section" data-animate>
+      <div class="container">
+        <h2 class="heading-md text-center" style="margin-bottom: 3rem;">Quality Assurance</h2>
+        <div class="quality-grid">
+          <div class="quality-card">
+            <div class="quality-card__icon" style="background: linear-gradient(135deg, #2D7A3A, #5BAA6B);"></div>
+            <h3 class="heading-sm">Raw Material Checks</h3>
+            <p class="body-sm">Every batch of banana pseudostem is inspected for quality, freshness, and contamination before processing begins.</p>
+          </div>
+          <div class="quality-card">
+            <div class="quality-card__icon" style="background: linear-gradient(135deg, #D4A843, #FFF8E7);"></div>
+            <h3 class="heading-sm">Batch Testing</h3>
+            <p class="body-sm">Fibre content analysis, microbial testing, and nutritional verification on every production batch.</p>
+          </div>
+          <div class="quality-card">
+            <div class="quality-card__icon" style="background: linear-gradient(135deg, #5BAA6B, #A8C5A0);"></div>
+            <h3 class="heading-sm">Food-Grade Packaging</h3>
+            <p class="body-sm">All products are packaged in food-grade materials with proper sealing to maintain freshness and safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance Banner -->
+    <section class="compliance-banner" data-animate>
+      <div class="container text-center">
+        <h2 class="heading-md">FSSAI Compliant</h2>
+        <p class="body-lg" style="max-width: 700px; margin: 1rem auto 0;">All STEMBITE products comply with Food Safety and Standards Authority of India (FSSAI) regulations. We follow applicable licensing, standards, labelling, and claims requirements.</p>
+        <p class="body-sm" style="margin-top: 1rem;">No unsupported health claims. Only substantiated and legally permitted nutrition/health claims.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 class="footer__heading">Products</h4>
+          <a href="products.html" class="footer__link">Fibre+</a>
+          <a href="products.html" class="footer__link">Flour+</a>
+          <a href="products.html" class="footer__link">Mix</a>
+          <a href="products.html" class="footer__link">Bites</a>
+          <a href="products.html" class="footer__link">Pro (B2B)</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <a href="story.html" class="footer__link">Our Story</a>
+          <a href="process.html" class="footer__link">How It Works</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Resources</h4>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Recipes</a>
+          <a href="#" class="footer__link">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Connect</h4>
+          <a href="#" class="footer__link">Instagram</a>
+          <a href="#" class="footer__link">LinkedIn</a>
+          <a href="#" class="footer__link">Twitter</a>
+        </div>
+      </div>
+      <div class="footer__newsletter">
+        <h4 class="footer__heading">Join the Wellness Movement</h4>
+        <form class="footer__form">
+          <input type="email" placeholder="Enter your email" class="footer__input">
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 STEMBITE Foods. All rights reserved.</p>
+        <div>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/process.js"></script>
+</body>
+</html>

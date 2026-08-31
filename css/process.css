@@ -1,0 +1,140 @@
+/* Process Hero */
+.process-hero {
+  background: linear-gradient(135deg, var(--stb-dark) 0%, var(--stb-green-primary) 100%);
+  color: white;
+  padding: 6rem 0 3rem;
+  text-align: center;
+}
+
+/* Process Steps */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.process-step {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.process-step--reverse {
+  flex-direction: row-reverse;
+}
+
+.process-step__number {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--stb-green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--stb-font-heading);
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--stb-green-primary);
+}
+
+.process-step__content {
+  max-width: 500px;
+}
+
+.process-step__title {
+  font-family: var(--stb-font-heading);
+  font-weight: 600;
+  font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.process-step__desc {
+  font-family: var(--stb-font-body);
+  font-weight: 400;
+  color: var(--stb-gray);
+  line-height: 1.8;
+}
+
+.process-step__visual {
+  flex: 1;
+  min-height: 250px;
+  border-radius: var(--stb-radius-xl);
+}
+
+/* Quality Section */
+.quality-section {
+  background: var(--stb-green-light);
+}
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.quality-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: var(--stb-radius-lg);
+  border: 1px solid var(--stb-border);
+}
+
+.quality-card__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.quality-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.quality-card p {
+  color: var(--stb-gray);
+}
+
+/* Compliance Banner */
+.compliance-banner {
+  background: var(--stb-dark);
+  padding: 4rem 0;
+}
+
+.compliance-banner h2 {
+  color: white;
+}
+
+.compliance-banner p {
+  color: var(--stb-sage);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .process-step {
+    flex-direction: column !important;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .process-step__number {
+    width: 70px;
+    height: 70px;
+    font-size: 1.75rem;
+  }
+
+  .process-step__content {
+    max-width: 100%;
+  }
+
+  .process-step__visual {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .quality-grid {
+    grid-template-columns: 1fr;
+  }
+}

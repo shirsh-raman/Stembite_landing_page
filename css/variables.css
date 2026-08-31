@@ -1,0 +1,36 @@
+:root {
+  /* Colors */
+  --stb-green-primary: #2D7A3A;
+  --stb-green-secondary: #5BAA6B;
+  --stb-gold-accent: #D4A843;
+  --stb-white-bg: #FAFBF7;
+  --stb-dark: #1A2E1C;
+  --stb-green-light: #E8F5E9;
+  --stb-cream: #FFF8E7;
+  --stb-sage: #A8C5A0;
+  --stb-error: #C0392B;
+  --stb-gray: #6B7B6E;
+  --stb-border: #E0E5E0;
+
+  /* Shadows */
+  --stb-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --stb-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --stb-shadow-lg: 0 8px 24px rgba(45, 122, 58, 0.12);
+
+  /* Typography */
+  --stb-font-heading: 'Fraunces', Georgia, serif;
+  --stb-font-body: 'Inter', -apple-system, sans-serif;
+
+  /* Border Radius */
+  --stb-radius-sm: 6px;
+  --stb-radius-md: 8px;
+  --stb-radius-lg: 12px;
+  --stb-radius-xl: 16px;
+
+  /* Transitions */
+  --stb-transition: 250ms ease-out;
+
+  /* Spacing */
+  --stb-section-padding: clamp(3rem, 8vw, 6rem);
+  --stb-container-max: 1200px;
+}

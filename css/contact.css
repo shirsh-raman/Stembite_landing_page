@@ -1,0 +1,139 @@
+/* =====================
+   Contact Hero
+   ===================== */
+.contact-hero {
+  background: var(--stb-green-light);
+  padding: 6rem 0 3rem;
+  text-align: center;
+}
+
+/* =====================
+   Contact Section (Two-column)
+   ===================== */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* =====================
+   Contact Form
+   ===================== */
+.contact-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: var(--stb-radius-lg);
+  box-shadow: var(--stb-shadow-sm);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-family: var(--stb-font-body);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--stb-dark);
+  font-size: 0.9375rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--stb-border);
+  border-radius: var(--stb-radius-md);
+  font-family: var(--stb-font-body);
+  font-size: 0.9375rem;
+  color: var(--stb-dark);
+  background: #ffffff;
+  transition: border-color var(--stb-transition);
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--stb-green-primary);
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-submit {
+  width: 100%;
+}
+
+/* =====================
+   Contact Details
+   ===================== */
+.contact-details {
+  padding: 2rem 0;
+}
+
+.contact-detail-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-detail-item__icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: var(--stb-green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.contact-detail-item__text .form-label {
+  margin-bottom: 0.25rem;
+}
+
+.contact-detail-item__text div:last-child {
+  font-family: var(--stb-font-body);
+  font-weight: 400;
+  color: var(--stb-gray);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* =====================
+   Contact Map
+   ===================== */
+.contact-map {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--stb-radius-lg);
+  overflow: hidden;
+}
+
+/* =====================
+   FAQ
+   ===================== */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: var(--stb-gray);
+  line-height: 1.7;
+  font-family: var(--stb-font-body);
+  font-size: 0.9375rem;
+}
+
+/* =====================
+   Responsive
+   ===================== */
+@media (max-width: 992px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
